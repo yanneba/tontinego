@@ -1,25 +1,50 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "TontineGo",
+    "slug": "tontine-go-dp3cfhyfurdzbbvkflnn",
+    "description": "Créez, rejoignez et suivez vos tontines en toute transparence.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.tontinego.app",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.tontinego.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
+      "permissions": [],
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "tontinego",
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b7087cfb-94bc-4f65-a5f7-a5ebd716ac8d"
+      }
+    },
+    "owner": "yes-consults-team"
   }
 }
